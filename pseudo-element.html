@@ -1,0 +1,72 @@
+
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ <title>Popup</title>
+<style>
+.page-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  white-space: nowrap;
+  text-align: center;
+  font-size: 0;
+}
+  .page-content:before {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+  }
+
+.popup {
+  display: inline-block;
+  white-space: normal;
+  vertical-align: middle;
+  text-align: left;
+  font-size: 14px;
+  min-width: 200px;
+  max-width: 600px;
+  min-height: 100px;
+  border: 1px solid #333;
+}
+  .popup .header {
+    display: block;
+    width:100%;
+    height: 20px;
+    background: #444;
+    color: white;
+  }
+  .popup .header .btn-close {
+    display: inline-block;
+    float: right;
+    margin-right: 2px;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    background: #777;
+    cursor: pointer;
+    line-height: 18px;
+  }
+  .popup .content {
+    padding: 5px;
+  }
+</style>
+</head>
+<body>
+<div class="page-content">
+  <div class="popup">
+    <div class="header">
+      Всплывающее окно
+      <div class="btn-close">X</div>
+    </div>
+    <div class="content">
+    Сверстайте всплывающее окно (попап) — элемент, который показывается поверх содержимого веб-страницы. Он должен всегда находиться в её центре, при этом размер контента может меняться. Предложите максимальное количество решений и объясните, какие у каждого из них есть недостатки и преимущества. Результат пришлите в виде ссылки на GitHub.
+    </div>
+  </div>
+</div>
+</body>
+</html>
